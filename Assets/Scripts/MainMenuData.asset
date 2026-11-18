@@ -14,20 +14,100 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootNode:
     menuName: Main Menu
+    menuIcon: {fileID: 0}
+    iconSize: 48
+    itemColor: {r: 1, g: 1, b: 1, a: 1}
+    isDisabled: 0
+    itemSize: 90
     children:
     - menuName: Inventory
-      children: []
+      menuIcon: {fileID: 21300000, guid: b58db91e9dbff844ca4b8a4960e47fbb, type: 3}
+      iconSize: 48
+      itemColor: {r: 0.4720737, g: 0.012808777, b: 0.96981126, a: 1}
+      isDisabled: 0
+      itemSize: 90
+      children:
+      - menuName: Weapons
+        menuIcon: {fileID: 21300000, guid: b2a2b95acbab64a409cc7f0862163a56, type: 3}
+        iconSize: 48
+        itemColor: {r: 1, g: 1, b: 1, a: 1}
+        isDisabled: 0
+        itemSize: 90
+        children:
+        - menuName: Swords
+          menuIcon: {fileID: 0}
+          iconSize: 48
+          itemColor: {r: 1, g: 1, b: 1, a: 1}
+          isDisabled: 0
+          itemSize: 90
+          children: []
+        - menuName: Bows
+          menuIcon: {fileID: 0}
+          iconSize: 48
+          itemColor: {r: 1, g: 1, b: 1, a: 1}
+          isDisabled: 0
+          itemSize: 90
+          children: []
+      - menuName: Armor
+        menuIcon: {fileID: 0}
+        iconSize: 48
+        itemColor: {r: 1, g: 1, b: 1, a: 1}
+        isDisabled: 0
+        itemSize: 90
+        children: []
+      - menuName: Potions
+        menuIcon: {fileID: 0}
+        iconSize: 48
+        itemColor: {r: 1, g: 1, b: 1, a: 1}
+        isDisabled: 0
+        itemSize: 90
+        children: []
     - menuName: Skills
+      menuIcon: {fileID: 0}
+      iconSize: 36
+      itemColor: {r: 0.07730149, g: 0.08378802, b: 0.87169814, a: 1}
+      isDisabled: 0
+      itemSize: 110
       children: []
     - menuName: Map
+      menuIcon: {fileID: 21300000, guid: 1af352d30c6d6ef48805baf761337714, type: 3}
+      iconSize: 56
+      itemColor: {r: 0, g: 1, b: 0.11337662, a: 1}
+      isDisabled: 0
+      itemSize: 80
       children: []
     - menuName: Equipment
+      menuIcon: {fileID: 0}
+      iconSize: 44
+      itemColor: {r: 1, g: 0.3811757, b: 0, a: 1}
+      isDisabled: 0
+      itemSize: 130
       children: []
     - menuName: Quests
+      menuIcon: {fileID: 0}
+      iconSize: 48
+      itemColor: {r: 1, g: 1, b: 1, a: 1}
+      isDisabled: 0
+      itemSize: 90
       children: []
     - menuName: Shop
+      menuIcon: {fileID: 0}
+      iconSize: 48
+      itemColor: {r: 1, g: 1, b: 1, a: 1}
+      isDisabled: 1
+      itemSize: 100
       children: []
     - menuName: Settings
+      menuIcon: {fileID: 0}
+      iconSize: 48
+      itemColor: {r: 1, g: 1, b: 1, a: 1}
+      isDisabled: 0
+      itemSize: 90
       children: []
     - menuName: Exit
+      menuIcon: {fileID: 0}
+      iconSize: 48
+      itemColor: {r: 1, g: 0.083390534, b: 0, a: 1}
+      isDisabled: 0
+      itemSize: 90
       children: []
