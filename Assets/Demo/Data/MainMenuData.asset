@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootNode:
     menuName: Main Menu
+    description: 
     menuIcon: {fileID: 0}
     iconSize: 48
     itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -21,6 +22,7 @@ MonoBehaviour:
     itemSize: 90
     children:
     - menuName: Inventory
+      description: Manage your inventory and items.
       menuIcon: {fileID: 21300000, guid: b58db91e9dbff844ca4b8a4960e47fbb, type: 3}
       iconSize: 48
       itemColor: {r: 0.4720737, g: 0.012808777, b: 0.96981126, a: 1}
@@ -28,6 +30,7 @@ MonoBehaviour:
       itemSize: 90
       children:
       - menuName: Weapons
+        description: 
         menuIcon: {fileID: 21300000, guid: b2a2b95acbab64a409cc7f0862163a56, type: 3}
         iconSize: 48
         itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -35,6 +38,7 @@ MonoBehaviour:
         itemSize: 90
         children:
         - menuName: Swords
+          description: 
           menuIcon: {fileID: 0}
           iconSize: 48
           itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -42,6 +46,7 @@ MonoBehaviour:
           itemSize: 90
           children: []
         - menuName: Bows
+          description: 
           menuIcon: {fileID: 0}
           iconSize: 48
           itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -49,6 +54,7 @@ MonoBehaviour:
           itemSize: 90
           children: []
       - menuName: Armor
+        description: 
         menuIcon: {fileID: 0}
         iconSize: 48
         itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -56,6 +62,7 @@ MonoBehaviour:
         itemSize: 90
         children: []
       - menuName: Potions
+        description: 
         menuIcon: {fileID: 0}
         iconSize: 48
         itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -63,6 +70,7 @@ MonoBehaviour:
         itemSize: 90
         children: []
     - menuName: Skills
+      description: View and upgrade your skills.
       menuIcon: {fileID: 0}
       iconSize: 36
       itemColor: {r: 0.07730149, g: 0.08378802, b: 0.87169814, a: 1}
@@ -70,6 +78,7 @@ MonoBehaviour:
       itemSize: 110
       children: []
     - menuName: Map
+      description: Explore the world map.
       menuIcon: {fileID: 21300000, guid: 1af352d30c6d6ef48805baf761337714, type: 3}
       iconSize: 56
       itemColor: {r: 0, g: 1, b: 0.11337662, a: 1}
@@ -77,6 +86,7 @@ MonoBehaviour:
       itemSize: 80
       children: []
     - menuName: Equipment
+      description: 
       menuIcon: {fileID: 0}
       iconSize: 44
       itemColor: {r: 1, g: 0.3811757, b: 0, a: 1}
@@ -84,6 +94,7 @@ MonoBehaviour:
       itemSize: 130
       children: []
     - menuName: Quests
+      description: 
       menuIcon: {fileID: 0}
       iconSize: 48
       itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -91,6 +102,7 @@ MonoBehaviour:
       itemSize: 90
       children: []
     - menuName: Shop
+      description: 
       menuIcon: {fileID: 0}
       iconSize: 48
       itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -98,6 +110,7 @@ MonoBehaviour:
       itemSize: 100
       children: []
     - menuName: Settings
+      description: 
       menuIcon: {fileID: 0}
       iconSize: 48
       itemColor: {r: 1, g: 1, b: 1, a: 1}
@@ -105,6 +118,7 @@ MonoBehaviour:
       itemSize: 90
       children: []
     - menuName: Exit
+      description: 
       menuIcon: {fileID: 0}
       iconSize: 48
       itemColor: {r: 1, g: 0.083390534, b: 0, a: 1}

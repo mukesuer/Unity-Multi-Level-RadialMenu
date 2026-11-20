@@ -22,6 +22,8 @@ public class RadialMenuLayout : MonoBehaviour
         "Exit"
     };
 
+    private bool hasGenerated;
+
     private void Start()
     {
         GenerateItems();
@@ -29,6 +31,29 @@ public class RadialMenuLayout : MonoBehaviour
 
     private void GenerateItems()
     {
+        if (hasGenerated)
+            return;
+
+        if (itemPrefab == null)
+        {
+            Debug.LogError("Item Prefab is missing.", this);
+            return;
+        }
+
+        if (itemCount <= 0)
+        {
+            Debug.LogWarning("Item Count must be greater than zero.", this);
+            return;
+        }
+
+        if (float.IsNaN(radius) || float.IsInfinity(radius) || radius < 0f)
+        {
+            Debug.LogWarning("Invalid menu radius.", this);
+            return;
+        }
+
+        hasGenerated = true;
+
         for (int i = 0; i < itemCount; i++)
         {
             float angle = 90f - i * 360f / itemCount;
@@ -40,6 +65,9 @@ public class RadialMenuLayout : MonoBehaviour
             ) * radius;
 
             RectTransform item = Instantiate(itemPrefab, transform);
+
+            if (item == null)
+                continue;
 
             item.name = $"MenuItem_{i + 1:00}";
             item.anchoredPosition = position;
@@ -54,19 +82,19 @@ public class RadialMenuLayout : MonoBehaviour
 
             TMP_Text label = item.GetComponentInChildren<TMP_Text>();
 
-            if (label != null)
-            {
-                label.text = i < itemNames.Length
+            string buttonName =
+                itemNames != null && i < itemNames.Length &&
+                !string.IsNullOrWhiteSpace(itemNames[i])
                     ? itemNames[i]
                     : $"Menu Item {i + 1}";
-            }
+
+            if (label != null)
+                label.text = buttonName;
 
             Button button = item.GetComponent<Button>();
 
             if (button != null)
             {
-                string buttonName = itemNames[i];
-
                 button.onClick.AddListener(() =>
                 {
                     Debug.Log("Clicked: " + buttonName);

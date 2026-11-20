@@ -6,6 +6,8 @@ using UnityEngine;
 public class RadialMenuNode
 {
     public string menuName;
+    [TextArea(2, 4)]
+    public string description;
     public Sprite menuIcon;
     public float iconSize = 48f;//default
     public Color itemColor = Color.white;
